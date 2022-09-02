@@ -54,7 +54,7 @@ Download the model and run directly
    
    * nmrstat.py
 
-Special Notation
+Special Note
 ===
 
   Filename(xxx.sdf, without the suffix) cannot exceed eight characters.
