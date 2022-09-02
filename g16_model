@@ -1,0 +1,22 @@
+echo $GAUSS_RUNDIR
+cd $GAUSS_RUNDIR
+
+export GAUSS_SCRDIR GAUSS_RUNDIR
+
+g16root=/share/apps/G16A03
+source $g16root/g16/A03/bsd/g16.profile
+module use /share/apps/modules/modulefiles
+module load intel
+module load mkl
+
+PATH=$PATH:
+
+export PATH g16root
+
+echo "Starting Gaussian run at" `date`
+
+g16 < $GAUSS_RUNDIR/FNAME.com > $GAUSS_RUNDIR/FNAME.log
+
+echo "Finished Gaussian run at" `date`
+
+rm -rf $GAUSS_SCRDIR

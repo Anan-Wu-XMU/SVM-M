@@ -1,0 +1,73 @@
+#!/bin/bash 
+
+#Take the PBS options from the input file and remove the corresponding lines
+#from the input file
+
+if [ $# -lt 2 ] 
+  then
+    echo "Usage: q16 queue FILENAME"
+    echo "       queue: E2680,gold1,gold2,jlye,snode,E5,gpu"
+    echo "       FILENAME: the gaussian input file without suffix(.com)" 
+    exit 1
+fi
+
+if [ ! -e $2.com ]
+  then 
+    echo "Error: File $2.com does not exist!" 
+    exit 1
+fi
+
+FName=$2
+GAUSS_RUNDIR=`pwd`
+cd $GAUSS_RUNDIR
+
+
+if [ $1 = E2680 ]; then 
+  NP=28
+  cp /share/apps/scripts/g16_model ./g16_model
+elif [ $1 = gold1 ] || [ $1 = gold2 ] || [ $1 = gold3 ]; then
+  NP=24
+  cp /share/apps/scripts/g16_model ./g16_model
+elif [ $1 = gpu ]; then
+  NP=16
+  cp /share/apps/scripts/g16_model ./g16_model
+elif [ $1 = jlye ]; then
+  NP=32
+  cp /share/apps/scripts/g16_model ./g16_model
+elif [ $1 = E5 ]; then 
+  NP=16
+  cp /share/apps/scripts/g16E5_model ./g16_model
+elif [ $1 = snode ]; then 
+  NP=32
+  cp /share/apps/scripts/g16E5_model ./g16_model
+else 
+  echo "Non-supported Queue"
+  exit 1
+fi
+GAUSS_SCRDIR=/state/partition1/$USER/$2
+
+#Initialization 
+ulimit -s unlimited
+
+## Construct the real file
+
+sed "s/FNAME/$FName/g" g16_model > model1
+sed -i '/nproc/d' $2.com
+echo "#PBS -N $2" > test1999
+echo "#PBS -e $2.err" >> test1999
+echo "#PBS -o $2.out" >> test1999
+echo "#PBS -q $1" >> test1999
+echo "#PBS -l nodes=1:ppn=$NP" >> test1999
+echo "%nproc=$NP" >> nproc
+echo "" >> test1999
+echo "GAUSS_RUNDIR=$GAUSS_RUNDIR" >> test1999
+echo "GAUSS_SCRDIR=$GAUSS_SCRDIR" >> test1999
+echo "rm -rf /state/partition1/$USER/*" >> test1999
+echo "mkdir -p $GAUSS_SCRDIR" >> test1999
+cat nproc $2.com > tproc
+mv tproc $2.com
+cat test1999 model1 > $2
+rm model1 test1999 
+qsub $2
+rm g16_model nproc
+rm $2
