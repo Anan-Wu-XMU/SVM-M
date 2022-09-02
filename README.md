@@ -3,7 +3,7 @@ SVM-M
 
 The SVM-M repository includes all scripts for the SVM-M structure elucidation of natural products. It contains two parts: 
 
-   1. Given all intial conformers of a candidate strucure, automated evaluation of 13C/1H NMR cheimical shifts at the xOPBE/6-311+G(2D,P) level of theory. Geometry optimzations, conformational analysis, NMR calculations and Boltzman average are performed automatically
+   1. Given all intial conformers of a candidate structure, automated evaluation of 13C/1H NMR cheimical shifts at the xOPBE/6-311+G(2D,P) level of theory. Geometry optimzations, conformational analysis, NMR calculations and Boltzman average are performed automatically
 
    2. Structure elucidation with the SVM-M protocol
 
