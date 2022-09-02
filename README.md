@@ -49,6 +49,10 @@ Download the model and run directly
    * autopcm.sh xxx.sdf queue  (Geometry optimization in the solution phase)
 
    We note that all NMR calculations are performed in the solution phase.
+   
+   Once all calculations are done, you will find two files, named as allNMR.txt and allHNMR.txt, in which contain the Boltzman averaged 13C/1H chemical shieldings and chemical shifts. To perform the SVM-M structure elucidation, you need to put the experimental 13C chemical shifts into a file "exp.txt" and run the python script
+   
+   * nmrstat.py
 
 Contact
 ===
