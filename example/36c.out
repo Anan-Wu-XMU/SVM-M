@@ -1,0 +1,112 @@
+Number of conformers in PM7 calculations: 384
+geometry optimization failed for 36cgeom102.log!!!
+geometry optimization failed for 36cgeom142.log!!!
+geometry optimization failed for 36cgeom236.log!!!
+geometry optimization failed for 36cgeom293.log!!!
+geometry optimization failed for 36cgeom365.log!!!
+geometry optimization failed for 36cgeom40.log!!!
+36cgeom163.log is a TS!
+36cgeom197.log is a TS!
+36cgeom338.log is a TS!
+Number of conformers in wB97XD/3-21G: 371
+geometry optimization failed for 36cgeom143.log!!!
+geometry optimization failed for 36cgeom205.log!!!
+geometry optimization failed for 36cgeom239.log!!!
+geometry optimization failed for 36cgeom257.log!!!
+geometry optimization failed for 36cgeom268.log!!!
+geometry optimization failed for 36cgeom313.log!!!
+geometry optimization failed for 36cgeom76.log!!!
+geometry optimization failed for 36cgeom97.log!!!
+Number of conformers in wB97XD/6-31G*: 50
+Number of conformers in NMR calculations: 39
+=====================================================
+      Conformer   Relative En(kcal/mol)   Probability
+  36cgeom107.log           2.27               0.0015
+  36cgeom111.log           0.67               0.0228
+  36cgeom124.log           0.12               0.0579
+  36cgeom128.log           1.27               0.0084
+  36cgeom129.log           1.51               0.0055
+  36cgeom134.log           1.77               0.0036
+  36cgeom151.log           1.51               0.0055
+  36cgeom152.log           1.77               0.0036
+  36cgeom161.log           0.67               0.0228
+  36cgeom185.log           0.12               0.0579
+  36cgeom188.log           0.35               0.0395
+  36cgeom245.log           0.00               0.0712
+  36cgeom249.log           0.35               0.0395
+  36cgeom252.log           1.77               0.0036
+  36cgeom253.log           0.35               0.0395
+  36cgeom256.log           1.51               0.0055
+  36cgeom280.log           0.35               0.0395
+  36cgeom281.log           0.00               0.0712
+  36cgeom282.log           0.67               0.0228
+  36cgeom294.log           0.00               0.0712
+  36cgeom322.log           0.00               0.0712
+  36cgeom325.log           1.51               0.0055
+  36cgeom345.log           0.12               0.0579
+  36cgeom370.log           0.12               0.0579
+  36cgeom374.log           2.11               0.0020
+  36cgeom378.log           1.77               0.0036
+  36cgeom382.log           1.27               0.0084
+  36cgeom39.log           2.26               0.0016
+  36cgeom43.log           1.28               0.0082
+  36cgeom54.log           0.35               0.0395
+  36cgeom56.log           0.12               0.0579
+  36cgeom67.log           0.67               0.0228
+  36cgeom69.log           1.28               0.0082
+  36cgeom78.log           1.28               0.0082
+  36cgeom81.log           0.35               0.0395
+  36cgeom88.log           2.27               0.0015
+  36cgeom89.log           2.26               0.0016
+  36cgeom93.log           1.51               0.0055
+  36cgeom9.log            1.51               0.0055
+=====================================================
+Boltzmann averaged NMR shieldings and Chemical shifts!
+=====================================================
+ Atom    Shielding   Shifts
+C  1   167.8067     23.83
+C  2   155.2827     36.36
+C  3   115.5692     76.07
+C  4   156.8854     34.75
+C  5   117.1278     74.51
+C  6   157.5567     34.08
+C  7   110.4112     81.23
+C  8   154.9844     36.65
+C  9   167.5908     24.05
+C 10   167.4199     24.22
+C 11   166.9779     24.66
+C 12   167.2520     24.39
+C 13   166.7621     24.88
+=====================================================
+      
+=====================================================
+ Atom    Shielding   Shifts  Note
+H 17     30.8155      0.83   CH3_0
+H 18     30.8155      0.83   CH3_0
+H 19     30.8155      0.83   CH3_0
+H 20     27.9080      3.74
+H 21     29.8965      1.75
+H 22     30.2202      1.43
+H 23     27.5016      4.15
+H 24     30.1480      1.50
+H 25     29.9633      1.68
+H 26     28.0840      3.56
+H 27     30.7971      0.85   CH3_1
+H 28     30.7971      0.85   CH3_1
+H 29     30.7971      0.85   CH3_1
+H 30     30.8322      0.82   CH3_2
+H 31     30.8322      0.82   CH3_2
+H 32     30.8322      0.82   CH3_2
+H 33     30.8171      0.83   CH3_3
+H 34     30.8171      0.83   CH3_3
+H 35     30.8171      0.83   CH3_3
+H 36     30.7763      0.87   CH3_4
+H 37     30.7763      0.87   CH3_4
+H 38     30.7763      0.87   CH3_4
+H 39     30.7908      0.86   CH3_5
+H 40     30.7908      0.86   CH3_5
+H 41     30.7908      0.86   CH3_5
+H 42     28.5719      3.08   OH
+H 43     29.0316      2.62   OH
+H 44     27.1510      4.50   OH
+=====================================================
