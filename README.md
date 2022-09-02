@@ -3,7 +3,7 @@ SVM-M
 
 The SVM-M repository includes all scripts for the SVM-M structure elucidation of natural products. It contains two parts: 
 
-   1. Given all intial conformers of a candidate strucure, automated calculation of 13C/1H NMR cheimical shifts at the xOPBE/6-311+G(2D,P) level of theory. Geometry optimzations, conformational analysis, NMR calculations and Boltzman average are performed automatically
+   1. Given all intial conformers of a candidate strucure, automated evaluation of 13C/1H NMR cheimical shifts at the xOPBE/6-311+G(2D,P) level of theory. Geometry optimzations, conformational analysis, NMR calculations and Boltzman average are performed automatically
 
    2. Structure elucidation with the SVM-M protocol
 
@@ -30,9 +30,9 @@ The SVM-M repository includes all scripts for the SVM-M structure elucidation of
 Requirment 
 ===
 
-Gaussian 16 package, OpenPBS compatible queue system, Linux (CentOS compatible),  Python3 and rdkit
+Gaussian 16 package, OpenPBS compatible queue system, Linux (CentOS compatible),  Python3 and RDkit
 
-If we are running queue sysstem other than OpenPBS, we may need to modify the script q16 and autonmr.sh/autopcm.sh
+If you are running queue sysstem other than OpenPBS, you may need to modify the script q16 and the corresponding environments.
 
 Since redundant coordinates are used for conformational analysis, this repository requires a CentOS compatible system to run the precomplied Fortran code (Checkgeom)
 
